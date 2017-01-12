@@ -1,0 +1,24 @@
+.caret::after
+  display: inline-block
+  width: 0
+  height: 0
+  margin-right: 0.25rem
+  margin-left: 0.25rem
+  vertical-align: middle
+  content: ""
+  border-color: none
+  /* This allows positioning in flex box with ellipsis. May break non-flex */
+  position: absolute
+  right: 0
+  top: 0.85rem
+
+.down.caret::after
+  border-top: 0.3em solid
+  border-right: 0.3em solid transparent
+  border-left: 0.3em solid transparent
+
+.up.caret::after
+  border-top: 0
+  border-bottom: 0.3em solid
+  border-right: 0.3em solid transparent
+  border-left: 0.3em solid transparent
